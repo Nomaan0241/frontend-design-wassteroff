@@ -13,10 +13,12 @@ Contains specif Ascpect Ratio of `1920 X 1080`.
 
 **For the best Experience, use 1920 X 1080 Resolution.**
 
-## Learn More
+## Description
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This website includes graphical data representation in the form of bubble charts, which includes information on various profit margins and inventory numbers.\
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+It contains one little graph that neatly and succinctly summarises all the information.
+This has a striking colour scheme and wise choice of fonts.\
+This website was made using the Figma design platform and has unique CSS for each company.
 
-<img src="./public/dashboard.png" alt="Dashboard Screenshot" style="height: auto; max-width:100%;"/>
+<a  src="https://ui-design-noman-shaikh.vercel.app/" alt="visit site"><img src="./public/dashboard.png" alt="Dashboard Screenshot" style="height: auto; max-width:100%;"/></a>
