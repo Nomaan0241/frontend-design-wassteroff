@@ -5,7 +5,7 @@ Contains specif Ascpect Ratio of `1920 X 1080`.
 
 ## Technologies Used
 
-`react.js` `figma` `vanila css`
+`react.js` `figma` `vanila css` `html` `javascript`
 
 ### See Live Demo
 
@@ -19,4 +19,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-<img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+<img src="./public/dashboard.png" alt="Dashboard Screenshot" style="height: 500px; width:500px;"/>
