@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Navbar from "./Navbar";
 import "../componants/BubbleChart.css";
 import Footer from "./Footer";
@@ -10,9 +11,18 @@ import GitFork from "../assets/git-fork.svg";
 import GitPull from "../assets/git-pull.svg";
 
 const BubbleChart = () => {
+	const [Currency, setCurrency] = useState(null);
+	useEffect(() => {
+		axios("https://api.coindesk.com/v1/bpi/currentprice.json").then((res) => {
+			let data = res.data;
+			if (data != undefined) setCurrency(data);
+		});
+	}, []);
+
 	return (
 		<div>
 			<Navbar />
+			{/* {Currency != null ? console.log(Currency) : ""} */}
 			<div className="main">
 				<div className="side-section">
 					<div>
@@ -77,9 +87,9 @@ const BubbleChart = () => {
 
 						<div className="side-section-main-stats">
 							<div>
-								<p className="main-stats-heading">Total earning</p>
+								<p className="main-stats-heading">Current USD Rate</p>
 								<div className="main-stats-1">
-									<p className="main-stats-dollers">$12,875</p>
+									<p className="main-stats-dollers">$23,147</p>
 									<div className="triangle triangle-up"></div>
 									<p className="main-stats-percent">10%</p>
 								</div>
@@ -89,9 +99,9 @@ const BubbleChart = () => {
 							</div>
 							<div className="horizantal-break"></div>
 							<div>
-								<p className="main-stats-heading">Sales</p>
+								<p className="main-stats-heading">Current GBP Rate</p>
 								<div className="main-stats-1">
-									<p className="main-stats-dollers">$43,123</p>
+									<p className="main-stats-dollers">$19,341</p>
 									<div className="triangle triangle-up"></div>
 									<p className="main-stats-percent">12%</p>
 								</div>
@@ -151,15 +161,19 @@ const BubbleChart = () => {
 						<div className="second-circle">
 							<div className="center-circle">
 								<div className="cc-text">
-									<p className="center-text">Investments</p>
-									<p className="center-price">$76,644</p>
+									<p className="center-text">USD invested</p>
+									<p className="center-price">
+										${Currency != null ? Currency.bpi.USD.rate : ""}
+									</p>
 									<p className="center-months">3 months</p>
 								</div>
 							</div>
 							<div className="bottom-left-circle">
 								<div className="cc-text-2">
-									<p className="center-text">Design</p>
-									<p className="center-price">$32,982</p>
+									<p className="center-text">GBP invested</p>
+									<p className="center-price">
+										${Currency != null ? Currency.bpi.GBP.rate : ""}
+									</p>
 									<p className="center-months">3 months</p>
 								</div>
 							</div>
