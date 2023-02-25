@@ -1,15 +1,15 @@
-# Getting Started with Create React App
+# UI Design for WASSERTOFF.PVT.LTD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created according to the clients requirements.
+Contains specif Ascpect Ratio of `1920 X 1080`.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+`react.js` `figma` `vanila css`
 
-### `npm start`
+## See Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[http://localhost:3000](https://ui-design-noman-shaikh.vercel.app/) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
