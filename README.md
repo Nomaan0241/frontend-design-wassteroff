@@ -19,4 +19,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-<img src="./public/dashboard.png" alt="Dashboard Screenshot" style="height: 500px; width:500px;"/>
+<img src="./public/dashboard.png" alt="Dashboard Screenshot" style="height: auto; max-width:100%;"/>
