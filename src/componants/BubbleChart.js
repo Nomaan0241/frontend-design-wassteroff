@@ -24,12 +24,14 @@ const BubbleChart = () => {
 			<Navbar />
 			{/* {Currency != null ? console.log(Currency) : ""} */}
 			<div className="main">
+				{/* Side section of the side contain graphs and other statistics */}
 				<div className="side-section">
 					<div>
 						<div>
 							{" "}
 							<p className="side-section-heading">Design faster</p>{" "}
 						</div>
+						{/* FIrst Graph of side section */}
 						<div className="side-section-first-graph">
 							<div className="side-section-first-graph-diagram">
 								<div className="circles">
@@ -85,6 +87,7 @@ const BubbleChart = () => {
 							</div>
 						</div>
 
+						{/* Side Section main stat bar */}
 						<div className="side-section-main-stats">
 							<div>
 								<p className="main-stats-heading">Current USD Rate</p>
@@ -110,6 +113,8 @@ const BubbleChart = () => {
 								</p>
 							</div>
 						</div>
+
+						{/* Side Section other Stat bar */}
 						<div className="side-section-other-stats">
 							<div className="side-section-data">
 								<p className="side-section-data-name">Travel</p>
@@ -132,6 +137,8 @@ const BubbleChart = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* Main Section of the Componant. Contains Graph */}
 				<div className="main-section">
 					<p className="heading-first"> TIMELINE</p>
 					<div className="timeline-bar">
