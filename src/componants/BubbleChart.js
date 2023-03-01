@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
 import "../componants/BubbleChart.css";
@@ -11,11 +11,19 @@ import GitFork from "../assets/git-fork.svg";
 import GitPull from "../assets/git-pull.svg";
 
 const BubbleChart = () => {
+	const windowWidth = useRef(window.innerWidth);
+
+	console.log("width: ", windowWidth.current);
+
+	if (windowWidth.current >= 1300 && windowWidth.current <= 1400)
+		document.body.style.zoom = "72%";
+	if (windowWidth.current >= 1450 && windowWidth.current <= 1900)
+		document.body.style.zoom = "80%";
 	const [Currency, setCurrency] = useState(null);
 	useEffect(() => {
 		axios("https://api.coindesk.com/v1/bpi/currentprice.json").then((res) => {
 			let data = res.data;
-			if (data != undefined) setCurrency(data);
+			if (data !== undefined) setCurrency(data);
 		});
 	}, []);
 

@@ -1,5 +1,4 @@
 html,
-body,
 body div,
 span,
 object,
@@ -71,11 +70,14 @@ video {
 	vertical-align: baseline;
 	background: transparent;
 }
+html {
+	background-color: #eef1fa;
+}
 
 body {
 	width: 1920px;
 	height: 1080px;
-	background-color: #fafafa;
+	background-color: #eef1fa;
 }
 
 .main {
@@ -1206,7 +1208,7 @@ body {
 
 .nav-spacing {
 	background: #ffffff;
-
+	width: 40px;
 	margin-top: 8px;
 	margin-bottom: 8px;
 
